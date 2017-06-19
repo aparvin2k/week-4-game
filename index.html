@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Gem Collector</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">		
+
+		</div>
+
+		<div class="row top-half start-div">
+			<h1 class="text-center" id="screen-title">Infinity Stone Collector</h1>
+			<h2>Instructions:</h2>
+			<br>
+			<p>
+				> You will be given a random target score at the beginning of the game.<br><br>
+				> There are four different color gems to choose from. By clicking on any of the four gems you will add a random amount to your current score.<br><br>
+				> The value of each gem is hidden from you until you click it and it will change each game.<br><br>
+				> You win the game by matching your score to the target score. If you go over the target score you lose.<br><br>
+				> The values of each gem will change each time a new round starts.
+			</p>
+			<br><br>
+			<button type="button" class="btn btn-primary btn-lg center-block start-btn">Start Collecting</button>
+		</div>	
+
+		<div class="row top-half">
+			<div class="stat-box lft-float">
+				<h2 class="text-center">Target Score:<br><span id="target">0</span></h2>
+			</div>
+
+			<div class="stat-box rgt-float">
+				<h2 class="text-center">Current Score:<br><span id="score">0</span></h2>
+			</div>
+		</div>	
+
+		<div class="row top-half">
+			<div class="img-div text-center">
+				<img class="gems" id="mind-gem" src="assets/images/blue_mind_gem.png" alt="mind gem">
+				<img class="gems" id="soul-gem" src="assets/images/green_soul_gem.png" alt="soul gem">
+				<img class="gems" id="power-gem" src="assets/images/red_power_gem.png" alt="power gem">
+				<img class="gems" id="space-gem" src="assets/images/purple_space_gem.png" alt="space gem">
+			</div>
+		</div>
+
+		<div class="row top-half">
+			<div class="stat-box lft-float">
+				<h2 class="text-center"># of Wins:<br><span id="wins">0</span></h2>
+			</div>
+
+			<div class="stat-box rgt-float">
+				<h2 class="text-center"># of Losses:<br><span id="losses">0</span></h2>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>

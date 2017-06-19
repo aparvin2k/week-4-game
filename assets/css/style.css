@@ -1,0 +1,91 @@
+html {
+	height: 100%;
+}
+
+body {
+	background-image: url(../images/infinity_war_background.png);
+	font-family: Georgia;
+}
+
+.start-btn {
+	position: relative;
+	font-size: 48px;
+}
+
+.start-div {
+	background-color: black;
+	opacity: 0.75;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.start-div h2 {
+	margin: 20px;
+}
+
+.start-div p {
+	font-size: 24px;
+	font-family: Arial;
+	color: white;
+	margin: 20px;
+}
+
+#screen-title {
+	font-size: 64px;
+	font-family: Georgia;
+	color: #ffffff;
+}
+
+.top-half {
+	margin-top: 170px;
+}
+
+.img-div {
+	display: flex;
+	height: 175px;
+	justify-content: space-around;
+}
+
+.gems {
+	width: 150px;
+	height: auto;
+}
+
+.stat-box {
+	height: auto;
+	width: 45%;
+	background: blue;
+	opacity: 0.50;
+}
+
+.lft-float {
+	float: left;
+}
+
+.rgt-float {
+	float: right;
+}
+
+h2 {
+	font-size: 48px;
+	font-family: Arial;
+	font-weight: bold;
+	color: #eff0f2;
+}
+
+@media only screen and (max-width : 768px) {
+	.stat-box {
+		width: 100%;
+
+	}
+
+	.gems {
+		width: 100px;
+		height: 120px;
+	}
+
+	h2 {
+		font-size: 32px;
+	}
+
+}
